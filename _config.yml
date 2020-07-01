@@ -1,1 +1,7 @@
-theme: jekyll-theme-modernist
+title: 聖潔復興記
+description: I have to tell you something
+author: Jawutzh
+permalink: /:title.html/
+url: https://jawutzh.github.io/nst
+paginate: 8
+paginate_path: "/page:num"
