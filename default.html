@@ -13,9 +13,10 @@
 		<header>
 		</header>
 		<div class="wrapper">
-			test
+			{{ content }}
 		</div>
 		<footer>
+			&copy; {{ date | date: "%Y" }}{{ site.name }}
 		</footer>
 	</body>
 </html>
