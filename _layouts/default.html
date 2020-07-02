@@ -12,6 +12,7 @@
 	</head>
 	<body>
 		<header>
+			{{ site.title }}
 		</header>
 		<div class="wrapper">
 			<div class="head-menu"></div>
@@ -19,7 +20,7 @@
 			{{ content }}
 		</div>
 		<footer>
-			&copy; {{ site.time | date: "%Y" }}
+			&copy; {{ site.time | date: "%Y" }} {{ site.title }}
 		</footer>
 	</body>
 </html>
