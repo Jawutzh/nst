@@ -6,6 +6,7 @@ body{
     font-size: 20px;
     text-align: justify;
 }
+
 a {
 	transition: .2s
 }
@@ -49,6 +50,7 @@ header {
     overflow: hidden;
     margin: 10px 0;
     text-align: center;
+	color: #555;
 }
 .post-excerpt {
     margin: 0;
@@ -59,7 +61,16 @@ header {
 }
 
 @media screen and (max-width:700px) {
+	body{
+		font-size: 16px;
+	}
 	.wrapper{
 		width: calc(100% - 40px);
+	}
+	header {
+		padding: 1.2em 0;
+	}
+	.header-stand{
+		height: calc(2.4em + 27px);
 	}
 }
