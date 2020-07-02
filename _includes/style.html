@@ -13,8 +13,11 @@ header {
     backdrop-filter: saturate(180%) blur(1em);
     background: linear-gradient(45deg, rgba(247,149,51,0.1) 0, rgba(243,112,85,0.1) 15%, rgba(239,78,123,0.1) 30%, rgba(161,102,171,0.1) 44%, rgba(80,115,184,0.1) 58%, rgba(16,152,173,0.1) 72%, rgba(7,179,155,0.1) 86%, rgba(109,186,130,0.1) 100%);
     margin-bottom: 10px;
+	position: absolute
 }
-
+.header-stand{
+	height: calc(2.5em + 27px)
+}
 .wrapper{
 	width: 600px;
 	padding: 0 20px;
@@ -22,12 +25,12 @@ header {
 }
 .site-title{
 	font-weight: 900;
-	font-size: 30px;
-	color:#333;
+	font-size: 27px;
+	color: #555;
 	text-decoration: unset;
 }
 .site-title: hover{
-	color: #555
+	color: #999
 }
 .post-card{
 	padding: 20px 0;
