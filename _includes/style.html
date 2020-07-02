@@ -10,16 +10,21 @@ header {
     padding: 1em 0;
     backdrop-filter: saturate(180%) blur(1em);
     background: linear-gradient(45deg, rgba(247,149,51,0.1) 0, rgba(243,112,85,0.1) 15%, rgba(239,78,123,0.1) 30%, rgba(161,102,171,0.1) 44%, rgba(80,115,184,0.1) 58%, rgba(16,152,173,0.1) 72%, rgba(7,179,155,0.1) 86%, rgba(109,186,130,0.1) 100%);
-}
+
 
 .wrapper{
-	width: 640px;
+	width: 600px;
+	padding: 20px 0;
     margin: 50px auto 0 auto;
     background: #FFF;
     border-radius: 8px;
 }
+.site-title{
+	font-weight: 900;
+	font-size: 30px;
+}
 .post-card{
-	padding: 20px;
+	padding: 0 20px;
     border-bottom: 3px dotted #EEE;
 }
 .post-card a{
@@ -38,4 +43,10 @@ header {
 .post-link {
     color: #444;
     text-decoration: unset;
+}
+
+@media screen and (max-width:1200px) {
+	.wrapper{
+		width: 100%
+	}
 }

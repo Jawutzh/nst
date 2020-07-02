@@ -4,7 +4,7 @@
         <meta name="theme-color" content="#1E325E">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"  />
         <link rel="icon" href="/favicon.png" type="image/x-icon"/>
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300&amp;display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;900&display=swap" rel="stylesheet">
 		<title>{% if page.title != nil %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 		<style>
 			{% include style.html %}
@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<header>
-			{{ site.title }}
+			<div class="wrapper"><a href="{{ site.url }}" class="site-title">{{ site.title }}</a></div>
 		</header>
 		<div class="wrapper">
 			<div class="head-menu"></div>
