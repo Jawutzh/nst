@@ -4,5 +4,5 @@ layout: default
 
 <h1 class="page-title">{{ page.title }}</h1>
 <div class="post-card">{{ page.content }}</div>
-<p>发表于{{ page.date | date: "%Y年%m月%d日" }}</p>
+<p class="post-info"><i class="fa fa-clock-o"></i> {{ page.date | date: "%Y-%m-%d" }} <i class="fa fa-folder-o"></i> {{ page.category }}</p>
 {% include comments.html %}
