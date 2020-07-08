@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.12.0/js/md5.js"></script>
+
+<div id="gitalk-container"></div>     
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+    // gitalk的主要参数
+        clientID: '8d5ecc4a5e1b94785a76',
+        clientSecret: '9a85af75e40a2d1f30d0e9b5319cb527d3b0aa54',
+        repo: 'comments',
+        owner: 'Jawutzh',
+        admin: ['Jawutzh'],
+        id: md5(location.href),
+        pagerDirection: 'first',
+        createIssueManually: true
+    });
+    gitalk.render('gitalk-container');
+</script> 
+
+<style>
+.gt-container * {
+    border: none;
+}
+.gt-container .gt-popup .gt-action.is--active:before {
+    display: none;
+}
+.gt-header-preview {
+    min-height: 72px;
+    background: #FFF;
+}
+.gt-container .gt-ico-text {
+    line-height: 14px;
+    vertical-align: middle;
+}
+.markdown-body img {
+    margin: 16px 0px;
+}
+.gt-container .gt-header-controls .gt-btn {
+    transition: 0.1s;
+}
+.markdown-body strong {
+    font-weight: 600 !important;
+}
+</style>
