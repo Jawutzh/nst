@@ -13,14 +13,16 @@
 		</style>
 	</head>
 	<body>
-		<div class="header-stand"></div>
-		<header>
-			<div class="wrapper"><a href="{{ site.url }}" class="site-title">{{ site.title }}</a></div>
-		</header>
-		<div class="wrapper">
-			<div class="head-menu"></div>
-			<div class="head-site-info"></div>
-			{{ content }}
+		<div class="nf">
+			<div class="header-stand"></div>
+			<header>
+				<div class="wrapper"><a href="{{ site.url }}" class="site-title">{{ site.title }}</a></div>
+			</header>
+			<div class="wrapper">
+				<div class="head-menu"></div>
+				<div class="head-site-info"></div>
+				{{ content }}
+			</div>
 		</div>
 		<footer>
 			&copy; 2020 - {{ site.time | date: "%Y" }} {{ site.title }}<br/>
