@@ -6,7 +6,8 @@ layout: default
 	<div class="post-card">
 		<h3 class="post-title"><a href="{{ site.url }}{{ post.url }}" class="post-link">{{ post.title }}</a></h3>
 		<div class="post-card-content">
-			<p class="post-excerpt">{{ post.excerpt | strip_html }}</p><a href="{{ site.url }}{{ post.url }}" class="read-more">Read more →</a>
+			<p class="post-excerpt">{{ post.excerpt | strip_html }}</p>
+			<p class="post-info"><i class="fa fa-clock-o"></i> {{ post.date | date: "%Y-%m-%d" }} <i class="fa fa-folder-o"></i> {{ post.category }}</p>
 		</div>
 	</div>
  {% endfor %}
