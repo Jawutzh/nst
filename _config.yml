@@ -3,7 +3,7 @@ description: 今朝把酒畅言谈 💙 明日柳丝编花篮
 author: Jawutzh
 permalink: /:title.html/
 url: https://www.khian.xyz
-paginate: 8
+paginate: 2
 paginate_path: "/page:num"
 repo: nst
 owner: Jawutzh
