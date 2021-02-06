@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 	<div class="post-card-index">
 		<h3 class="post-title"><a href="{{ site.url }}{{ post.url }}" class="post-link">{{ post.title }}</a></h3>
 		<div class="post-card-content">
@@ -10,5 +10,30 @@ layout: default
 			<p class="post-info-index"><i class="fa fa-clock-o"></i> {{ post.date | date: "%Y-%m-%d" }}　 <i class="fa fa-folder orange"></i> {{ post.category }}　|　共 {{ post.content | strip_html | strip_newlines | remove: " " | size }} 字</p>
 		</div>
 	</div>
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
  {% endfor %}
 
